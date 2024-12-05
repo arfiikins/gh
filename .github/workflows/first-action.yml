@@ -10,6 +10,11 @@ jobs:
         run: |
             echo "first line!"
             echo "second line!"
+      - name: Output env variables
+        run: |
+            echo $GITHUB_SERVER_URL
+            echo $GITHUB_REF
+            echo $GITHUB_SHA
       - name: Print goodbye
         run: echo "Done - bye!"
       
